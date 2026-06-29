@@ -3,7 +3,7 @@
 
 <br />
 
-### I'm thrilled to be launching ooda, the simplest way to internally host, manage and share web projects (sites, prototypes, documents and more) as a team.
+### I'm thrilled to be launching ooda, the simplest way to host, manage and share unlimited internal web things[*](#things) as a team.
 
 You're reading this because I'm looking for design partners - teams who'd like to try Ooda in its earliest stages.
 
@@ -27,13 +27,13 @@ Building with AI is dreamy. But putting what you've built online is full of bad 
 
 Zip files! in 2026!
 
-Bad enough for one website. But in any given week soon you might publish dozens or even hundreds of 'websites' both permanent tools but many more ephemeral explorations.
+Bad enough for one website. But in any given week soon you might publish dozens or even hundreds of 'websites', some permanent tools but many more ephemeral explorations.
 
-They may be fleeting but they still must be secure by default. This explosion of creativity and risk needs a new solution.
+They may be fleeting but they still must be secure by default. I believe this explosion of creativity and risk needs a new solution.
 
-## Google docs, but for web things*
+## Jumble Sale, but for web things[*](#things)
 
-Ooda is incredible simple. Build as you would locally or in a cloud sandbox. Install the ooda skill and log in. Then 
+Ooda is incredible simple. Install the ooda skill and log in once. Build as you normally would locally or in the cloud. Then when you want to put it online:
 
 1. Ask your agent to 'put this on ooda'.
 2. Within a minute, get a private `[slug].ooda.run` url back. 
@@ -86,9 +86,9 @@ I can't wait to hear from you
 
 <br />
 
-<small class="opacity-75">P.s. this site is hosted on ooda. You can check out the code [here](https://github.com/toy-studio/ooda-design-partners.git). You can read about ooda's security stance and terms on the [main website](https://ooda.run).</small>
+<p class="opacity-75" id="this-site">P.s. this site is hosted on ooda. You can check out the code <a href="https://github.com/toy-studio/ooda-design-partners">here</a> and previous versions <a href="https://design-partners.ooda.run/?v=1">here (v1)</a> and <a href="https://design-partners.ooda.run/?v=3">here (v3)</a> (yes, versioning for free). You can read about ooda's security stance and terms on the <a href="https://ooda.run">main website</a>.</p>
 
-<small class="opacity-75">*Things currently means anything built as a website on a link. Could be websites, or tools, prototypes, documents, games, anything really! Struggling for a better collective noun - please let me know if you have an idea.</small>
+<p class="opacity-75" id="things">*Things currently means anything built as a website on a link. Could be websites, or tools, prototypes, documents, games, anything really! Struggling for a better collective noun - please let me know if you have an idea.</p>
 
 
 <!--<div

@@ -18,6 +18,39 @@
     --font-display: "Caveat", cursive;
 }
 
+/* Smoothly animate scrolling to in-page anchors. */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Briefly highlight the element an in-page anchor link jumps to. The sage
+   ring/background flashes then fades, so the reader's eye lands in the right
+   spot. scroll-margin keeps the target clear of the top edge. */
+:target {
+    scroll-margin-top: 2rem;
+    border-radius: 0.3rem;
+    animation: target-flash 5s ease-out;
+}
+@keyframes target-flash {
+    0%,
+    35% {
+        background-color: var(--color-surface-dark);
+        box-shadow: 0 0 0 0.65rem var(--color-surface-dark);
+    }
+    100% {
+        background-color: transparent;
+        box-shadow: 0 0 0 0.65rem transparent;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    :target {
+        animation: none;
+    }
+}
+
 /* Styling for the Markdown letter body (src/content/index.md).
    Tailwind's preflight resets headings/lists, so re-style them here. */
 .letter > :first-child {
