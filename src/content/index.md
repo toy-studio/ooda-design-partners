@@ -1,7 +1,7 @@
 
 # Become an ooda design partner
 
-<div
+<!--<div
     class="relative mb-8 aspect-video overflow-hidden rounded-xl border border-border bg-ink"
 >
     <iframe
@@ -11,9 +11,7 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
         class="absolute inset-0 h-full w-full border-0"></iframe>
-</div>
-
-![Jonny](../assets/jonny.jpg)
+</div>-->
 
 Hey there!
 
@@ -86,5 +84,16 @@ I'll reply immediately with a booking link so we can get on a call and see if we
     <span class="btn-sent hidden">Thanks!</span>
   </button>
 </form>
+
+I can't wait to hear from you
+
+[Jonny](https://linkedin.com/in/jonnyburch)
+
+
+![Jonny](../assets/jonny.jpg)
+
+<br />
+
+P.s. this site is hosted on ooda! You can check out the code [here](https://github.com/toy-studio/ooda-design-partners.git).
 
 _(*I'm kinda struggling with what they should be called. Sites feels too big and permanent. Ideas welcome!)_

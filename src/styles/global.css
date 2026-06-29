@@ -60,5 +60,5 @@
     @apply my-4 border-l-2 border-border pl-4 text-ink-muted italic;
 }
 .letter img {
-    @apply h-24 w-24 rounded-full border border-border object-cover;
+    @apply h-16 w-16 rounded-full object-cover;
 }
