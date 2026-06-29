@@ -31,15 +31,19 @@ Bad enough for one website. But in any given week soon you might publish dozens 
 
 They may be fleeting but they still must be secure by default. I believe this explosion of creativity and risk needs a new solution.
 
-## Jumble Sale, but for web things[*](#things)
+## A Library, but for web things[*](#things)
 
-Ooda is incredible simple. Install the ooda skill and log in once. Build as you normally would locally or in the cloud. Then when you want to put it online:
+Ooda is incredible simple. Install the ooda skill and cli, and log in once. Build web stuff as you normally would. 
+
+**Then when you want to put it online:**
 
 1. Ask your agent to 'put this on ooda'.
 2. Within a minute, get a private `[slug].ooda.run` url back. 
-3. If there are secrets and variables to manage, ooda hosts those securely for you too — perfect for anything from your claude API key to database credentials.
+3. If there are secrets and variables to manage, ooda handles those securely for you too. That unlocks not just static html, but real, interactive sites that keep state, integrate AI and handle live data.
 
-That link then becomes available on your dashboard on ooda.run, where anyone in your organisation can find and use it. Optionally set it to public or password protected, but by default fully gated behind your company's ooda auth.
+Your new website is then added to your team's dashboard on app.ooda.run, where the rest of the team can find and use it. Default is locked behind auth, but optionally set it to password protected or even public. 
+
+Need to update the site? the `ooda.json` file that ooda adds ensures `update ooda` maintains the same link, and even stores old versions so you can scrub back and forth.
 
 That's it. Thats the whole thing. But I have grand plans for where it goes from here.
 
