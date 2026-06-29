@@ -3,7 +3,7 @@
 
 <br />
 
-### I'm thrilled to be launching ooda, the simplest way to host, manage and share unlimited internal web things[*](#things) as a team.
+### I'm thrilled to be launching ooda, the simplest way to host, manage and share unlimited internal web things as a team.
 
 You're reading this because I'm looking for design partners - teams who'd like to try Ooda in its earliest stages.
 
@@ -13,11 +13,9 @@ But first, let me set out my stall.
 
 Over the last year I've spoken to dozens of product and design teams who've fallen in love with working AI-first. They're swapping docs and canvases with live, interactive code. 
 
-When you can write code as fast as you can think, it unlocks an explosion of new possibilities, from interactive documents to presentations, prototypes, dashboards, forms, games and so much more.
+When you can write code as fast as you can think, it unlocks an explosion of new possibilities, from interactive documents to presentations, prototypes, tools, dashboards, forms, games and so much more.
 
-The shared technology of the web will soon allow all of us to create and communicate in whatever form our imagination lets us.
-
-### Sharing those artifacts, however, remains too hard.
+### Sharing those creations, however, remains too hard.
 
 Building with AI is dreamy. But putting what you've built online is full of bad choices.
  
@@ -27,25 +25,23 @@ Building with AI is dreamy. But putting what you've built online is full of bad 
 
 Zip files! in 2026!
 
-Bad enough for one website. But in any given week soon you might publish dozens or even hundreds of 'websites', some permanent tools but many more ephemeral explorations.
+Bad for one lump of code, a distaster when you're publishing dozens or even hundreds of tiny 'websites' day to day. 
 
-They may be fleeting but they still must be secure by default. I believe this explosion of creativity and risk needs a new solution.
+I believe this explosion of creativity and risk needs a new solution. More secure, more discoverable, less friction.
 
-## A Library, but for web things[*](#things)
+## A Library, but for web things
 
-Ooda is incredible simple. Install the ooda skill and cli, and log in once. Build web stuff as you normally would. 
+Ooda at it's heart, is incredible simple. Install the ooda skill and cli, and log in once. Then build web stuff as you normally would. 
 
-**Then when you want to put it online:**
+When you want to put it online, ask your agent to 'put this on ooda'.
 
-1. Ask your agent to 'put this on ooda'.
-2. Within a minute, get a private `[slug].ooda.run` url back. 
-3. If there are secrets and variables to manage, ooda handles those securely for you too. That unlocks not just static html, but real, interactive sites that keep state, integrate AI and handle live data.
+Within a minute, get a private `[slug].ooda.run` url back. If there are secrets and variables to manage, ooda handles those securely for you too. That unlocks not just static html, but real, interactive sites that keep state, integrate AI and handle live data.
 
-Your new website is then added to your team's dashboard on app.ooda.run, where the rest of the team can find and use it. Default is locked behind auth, but optionally set it to password protected or even public. 
+Your new website is then added to your team's dashboard on app.ooda.run, where the rest of the team can find and use it. By default it's locked behind auth, but you can optionally set it to password protected or even public. 
 
-Need to update the site? the `ooda.json` file that ooda adds ensures `update ooda` maintains the same link, and even stores old versions so you can scrub back and forth.
+Need to update the site? the `ooda.json` file that ooda adds ensures "update ooda" maintains the same link, and even stores old versions so you can scrub back and forth.
 
-That's it. Thats the whole thing. But I have grand plans for where it goes from here.
+That's it. Thats the whole thing. (I may have grand plans for where it goes from here).
 
 ## The ask
 
@@ -53,10 +49,10 @@ I'd love teams to try this out. It won't be free, but will be affordable so long
 
 **The perfect teams for me would be:**
 - 5-100 designers, researchers, writers, PMs etc.
-- Already building small web things* and sharing them with each other
+- Already building small web things and sharing them with each other
 - Keen to keep moving their craft forwards with brand new tools, not just sticking to the existing ones
 
-Even better, I'd love to run a 1 hour lunchtime workshop for free as part of our partnership. Just the basics of getting familiar with ooda and hosting your first things* together.
+Even better, I'd love to run a 1 hour lunchtime workshop for free as part of our partnership. Just the basics of getting familiar with ooda and hosting your first things together.
 
 ## Sign up below
 
@@ -91,8 +87,6 @@ I can't wait to hear from you
 <br />
 
 <p class="opacity-75" id="this-site">P.s. this site is hosted on ooda. You can check out the code <a href="https://github.com/toy-studio/ooda-design-partners">here</a> and previous versions <a href="https://design-partners.ooda.run/?v=1">here (v1)</a> and <a href="https://design-partners.ooda.run/?v=3">here (v3)</a> (yes, versioning for free). You can read about ooda's security stance and terms on the <a href="https://ooda.run">main website</a>.</p>
-
-<p class="opacity-75" id="things">*Things currently means anything built as a website on a link. Could be websites, or tools, prototypes, documents, games, anything really! Struggling for a better collective noun - please let me know if you have an idea.</p>
 
 
 <!--<div
