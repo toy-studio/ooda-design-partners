@@ -1,208 +1,174 @@
 ---
+import "../styles/global.css";
 import { Content as Letter } from "../content/index.md";
 
 const year = new Date().getFullYear();
 const description =
-  "We're looking for a small group of design partners to shape ooda before launch.";
+    "We're looking for a small group of design partners to shape ooda before launch.";
+
+// Absolute URLs for social cards (scrapers require absolute, not relative).
+const ogImage = new URL("/og-image.png", Astro.site).href;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ooda — Design partners</title>
-    <meta name="description" content={description} />
-    <meta property="og:title" content="ooda — Design partners" />
-    <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-    <link
-      href="https://cdn.jsdelivr.net/npm/geist@1/dist/fonts/geist-sans/style.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <main>
-      <a href="https://ooda.run" class="logo" aria-label="ooda">
-        <img src="/logo.svg" alt="ooda" />
-      </a>
-
-      <p class="eyebrow">Pre-launch</p>
-      <h1>Design partners</h1>
-
-      {/* EDIT ME — replace the placeholder YouTube ID below. */}
-      <div class="video">
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ"
-          title="ooda — Design partners"
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-
-      {/* Body copy lives in src/content/index.md — edit there. */}
-      <div class="letter">
-        <Letter />
-      </div>
-
-      <div class="cta">
-        <a class="button" href="mailto:hello@ooda.run?subject=ooda%20design%20partner"
-          >Become a design partner</a
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ooda — Design partners</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={canonical} />
+        <meta property="og:title" content="ooda — Design partners" />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="ooda — Design partners" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="ooda — Design partners" />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={ogImage} />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+        <link
+            href="https://cdn.jsdelivr.net/npm/geist@1/dist/fonts/geist-sans/style.css"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body
+        class="min-h-screen bg-white font-sans text-ink leading-[1.6] antialiased [text-rendering:optimizeLegibility]"
+    >
+        {/* Hand-drawn note pointing up at the browser's top edge. */}
+        <div
+            class="pointer-events-none fixed top-1 left-[120px] z-20 hidden flex-col items-center gap-0.5 text-ink-faint sm:flex"
+            aria-hidden="true"
         >
-        <span>or email hello@ooda.run</span>
-      </div>
+            <svg width="18" height="22" viewBox="0 0 24 30" fill="none">
+                <path
+                    d="M12 28 C 8 20, 16 13, 12 4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"></path>
+                <path
+                    d="M5 10 L 12 3 L 19 10"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+            </svg>
+            <span
+                class="font-display text-lg text-center leading-none whitespace-nowrap"
+            >
+                I'm hosted <br />on ooda
+            </span>
+        </div>
 
-      <footer>
-        <span>&copy; {year} toy.studio</span>
-        <a href="https://ooda.run">ooda.run</a>
-      </footer>
-    </main>
-  </body>
+        <main
+            class="mx-auto flex w-full max-w-[38rem] flex-col px-6 pt-16 pb-12"
+        >
+            <a
+                href="https://ooda.run"
+                class="mb-12 inline-block"
+                aria-label="ooda"
+            >
+                <img src="/logo.svg" alt="ooda" class="h-auto w-20 md:w-24" />
+            </a>
+
+            {
+                /* Body copy + signup form live in src/content/index.md — edit there. */
+            }
+            <div class="letter">
+                <Letter />
+            </div>
+
+            <footer
+                class="mt-16 flex flex-wrap justify-between gap-4 border-t border-border pt-8 text-sm text-ink-faint"
+            >
+                <span>&copy; {year} toy.studio</span>
+                <a
+                    href="https://ooda.run"
+                    class="text-ink-faint transition-colors hover:text-ink"
+                    >ooda.run</a
+                >
+            </footer>
+        </main>
+
+        <script>
+            // Publishable Plunk key (client-side, same project as ooda.run).
+            const PLUNK_PUBLIC_KEY =
+                "pk_REDACTED";
+
+            document.querySelectorAll("[data-signup-form]").forEach((form) => {
+                form.addEventListener("submit", async (e) => {
+                    e.preventDefault();
+                    const formEl = e.target as HTMLFormElement;
+                    const email = new FormData(formEl).get("email") as string;
+                    if (!email) return;
+
+                    const btn = formEl.querySelector("button")!;
+                    const placement =
+                        formEl.dataset.placement ?? "design-partners";
+                    btn.setAttribute("disabled", "");
+
+                    try {
+                        const res = await fetch(
+                            "https://next-api.useplunk.com/v1/track",
+                            {
+                                method: "POST",
+                                headers: {
+                                    "Content-Type": "application/json",
+                                    Authorization: `Bearer ${PLUNK_PUBLIC_KEY}`,
+                                },
+                                body: JSON.stringify({
+                                    event: "waitlist-signup",
+                                    email,
+                                    // Same list as ooda.run, flagged so design partners can be segmented.
+                                    data: {
+                                        source: "design-partners.ooda.run",
+                                        placement,
+                                        designPartner: true,
+                                    },
+                                }),
+                            },
+                        );
+                        if (!res.ok)
+                            throw new Error(`Plunk responded ${res.status}`);
+
+                        btn.querySelector(".btn-label")?.classList.add(
+                            "hidden",
+                        );
+                        btn.querySelector(".btn-sent")?.classList.remove(
+                            "hidden",
+                        );
+                        (
+                            formEl.querySelector(
+                                'input[type="email"]',
+                            ) as HTMLInputElement
+                        ).value = "";
+
+                        setTimeout(() => {
+                            btn.querySelector(".btn-label")?.classList.remove(
+                                "hidden",
+                            );
+                            btn.querySelector(".btn-sent")?.classList.add(
+                                "hidden",
+                            );
+                            btn.removeAttribute("disabled");
+                        }, 3000);
+                    } catch {
+                        btn.removeAttribute("disabled");
+                    }
+                });
+            });
+        </script>
+    </body>
 </html>
-
-<style is:global>
-  :root {
-    --surface: #ffffff;
-    --ink: #272725;
-    --ink-muted: #5a5a56;
-    --ink-faint: #8a8a84;
-    --border: #e6e6e3;
-    --button-text: #ebf1e5;
-  }
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  html {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
-  body {
-    font-family:
-      "Geist Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: var(--surface);
-    color: var(--ink);
-    min-height: 100vh;
-    line-height: 1.6;
-  }
-  main {
-    width: 100%;
-    max-width: 38rem;
-    margin: 0 auto;
-    padding: 4rem 1.5rem 3rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .logo {
-    display: inline-block;
-    margin-bottom: 3rem;
-  }
-  .logo img {
-    width: 120px;
-    height: auto;
-  }
-  .eyebrow {
-    font-family: "Caveat", cursive;
-    font-size: 1.6rem;
-    color: var(--ink-muted);
-    margin-bottom: 0.25rem;
-  }
-  h1 {
-    font-size: clamp(2.25rem, 6vw, 3.25rem);
-    line-height: 1.05;
-    letter-spacing: -0.02em;
-    font-weight: 600;
-    margin-bottom: 2rem;
-  }
-  .video {
-    position: relative;
-    aspect-ratio: 16 / 9;
-    margin-bottom: 2rem;
-    border-radius: 0.75rem;
-    overflow: hidden;
-    border: 1px solid var(--border);
-    background: var(--ink);
-  }
-  .video iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-  .letter p {
-    color: var(--ink-muted);
-    font-size: 1.075rem;
-    margin-bottom: 1rem;
-  }
-  .letter p:last-child {
-    margin-bottom: 0;
-  }
-  .letter strong {
-    color: var(--ink);
-    font-weight: 600;
-  }
-  .letter a {
-    color: var(--ink);
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
-  }
-  .letter a:hover {
-    color: var(--ink-muted);
-  }
-  .cta {
-    margin-top: 2.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.75rem 1.25rem;
-  }
-  a.button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: var(--ink);
-    color: var(--button-text);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    padding: 0.7rem 1.25rem;
-    border-radius: 0.6rem;
-    transition: opacity 0.15s ease;
-  }
-  a.button:hover {
-    opacity: 0.9;
-  }
-  .cta span {
-    color: var(--ink-faint);
-    font-size: 0.95rem;
-  }
-  footer {
-    margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border);
-    color: var(--ink-faint);
-    font-size: 0.875rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  footer a {
-    color: var(--ink-faint);
-    text-decoration: none;
-    transition: color 0.15s ease;
-  }
-  footer a:hover {
-    color: var(--ink);
-  }
-</style>

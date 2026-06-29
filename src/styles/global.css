@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* ooda design tokens — mirrors @ooda/ui/theme.css from the marketing site,
+   so utilities like bg-ink, text-ink-muted and border-border match ooda.run. */
+@theme {
+    --color-surface: #ebf1e5; /* sage — used as cream button text on dark */
+    --color-surface-raised: #f4f7f0;
+    --color-surface-dark: #d5e0ca;
+    --color-ink: #272725; /* primary text / solid buttons */
+    --color-ink-muted: #5a5a56; /* secondary text */
+    --color-ink-faint: #8a8a84; /* tertiary text / placeholders */
+    --color-border: #e6e6e3; /* hairlines, input borders */
+    --color-accent: #3a6f3a;
+
+    --font-sans:
+        "Geist Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+        sans-serif;
+    --font-display: "Caveat", cursive;
+}
+
+/* Styling for the Markdown letter body (src/content/index.md).
+   Tailwind's preflight resets headings/lists, so re-style them here. */
+.letter > :first-child {
+    @apply mt-0;
+}
+.letter > :last-child {
+    @apply mb-0;
+}
+.letter p {
+    @apply mb-4 text-lg text-ink-muted;
+}
+.letter strong {
+    @apply font-semibold text-ink;
+}
+.letter a {
+    @apply text-ink underline underline-offset-2 hover:text-ink-muted;
+}
+.letter h1 {
+    @apply mb-8 text-[clamp(2.25rem,6vw,3.25rem)] leading-[1.05] font-semibold tracking-[-0.02em] text-ink;
+}
+.letter h2 {
+    @apply mt-12 mb-3 text-[clamp(1.6rem,4vw,2rem)] leading-tight font-semibold tracking-[-0.015em] text-ink;
+}
+.letter h3 {
+    @apply mt-10 mb-2 text-2xl font-semibold text-ink;
+}
+.letter h4 {
+    @apply mt-8 mb-2 text-xl font-semibold text-ink;
+}
+.letter ul {
+    @apply mb-4 list-disc pl-5;
+}
+.letter ol {
+    @apply mb-4 list-decimal pl-5;
+}
+.letter li {
+    @apply mb-1 text-lg text-ink-muted;
+}
+.letter blockquote {
+    @apply my-4 border-l-2 border-border pl-4 text-ink-muted italic;
+}
+.letter img {
+    @apply h-24 w-24 rounded-full border border-border object-cover;
+}
