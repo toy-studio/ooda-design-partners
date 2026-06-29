@@ -1,0 +1,9 @@
+{
+  "name": "ooda-design-partners",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Pre-launch design-partners landing page, hosted on ooda.",
+  "scripts": {
+    "build": "rm -rf dist && mkdir -p dist && cp index.html logo.svg favicon.svg dist/"
+  }
+}
