@@ -1,50 +1,42 @@
 
 # Become an ooda design partner
 
-<!--<div
-    class="relative mb-8 aspect-video overflow-hidden rounded-xl border border-border bg-ink"
->
-    <iframe
-        src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ"
-        title="ooda — Design partners"
-        loading="lazy"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-        class="absolute inset-0 h-full w-full border-0"></iframe>
-</div>-->
-
-Hey there!
+<br />
 
 ### I'm thrilled to be launching ooda, the simplest way to internally host, manage and share web projects (sites, prototypes, documents and more) as a team.
 
+You're reading this because I'm looking for design partners - teams who'd like to try Ooda in its earliest stages.
+
+But first, let me set out my stall.
+
 ## Why ooda?
 
-Over the last year I've worked with product and design teams who've fallen in love with designing and thinking AI-first. Gone are the days where we're tied to the canvas and the doc as our only means of expression. 
+Over the last year I've spoken to dozens of product and design teams who've fallen in love with working AI-first. They're swapping docs and canvases with live, interactive code. 
 
-No more do we need to mock things up by drawing rectangles, only for someone else to build them for real.
+When you can write code as fast as you can think, it unlocks an explosion of new possibilities, from interactive documents to presentations, prototypes, dashboards, forms, games and so much more.
 
-The shared technology of the web allows us to create and communicate in whatever form our imagination lets us.
+The shared technology of the web will soon allow all of us to create and communicate in whatever form our imagination lets us.
 
 ### Sharing those artifacts, however, remains too hard.
 
-Once I have my bundle of html, css and javascript, I can either 
-1. host it on my personal Vercel, Netlify or github pages account — easy enough but not secure enough for any IT team — or 
-2. persuade someone internally to give me an expensive account to something designed for entirely the wrong thing — permanent websites that expect traffic and continuous development and maintainance.
+Building with AI is dreamy. But putting what you've built online is full of bad choices.
+ 
+1. **Host it on a personal Vercel, Netlify or Github pages account.** Both insecure and undiscoverable by the rest of your team
+2. **Persuade someone to give you access to an internal hosting platform**, slow, expensive and built for permanent websites that expect traffic and continuous development and maintainance.
+3. **Zip up the files** and send them over Slack.
 
-But what we're creating now is more often ephemeral, sketchy and one part of a messy process than it is robust and well engineered.
+Zip files! in 2026!
 
-In any given week we might publish dozens or even hundreds of 'websites' - some permanent tools but many simple ideas, expressed visually or interactively.
+Bad enough for one website. But in any given week soon you might publish dozens or even hundreds of 'websites' both permanent tools but many more ephemeral explorations.
 
-That doesn't mean they can escape just because we forgot to add auth, or they're hosted somewhere they can't be seen. 
+They may be fleeting but they still must be secure by default. This explosion of creativity and risk needs a new solution.
 
-This explosion of both creativity but also risk, needs a new solution.
-
-## The google docs, but for web things*
+## Google docs, but for web things*
 
 Ooda is incredible simple. Build as you would locally or in a cloud sandbox. Install the ooda skill and log in. Then 
 
 1. Ask your agent to 'put this on ooda'.
-2. Within a minute, get a private ooda.run url back. 
+2. Within a minute, get a private `[slug].ooda.run` url back. 
 3. If there are secrets and variables to manage, ooda hosts those securely for you too — perfect for anything from your claude API key to database credentials.
 
 That link then becomes available on your dashboard on ooda.run, where anyone in your organisation can find and use it. Optionally set it to public or password protected, but by default fully gated behind your company's ooda auth.
@@ -53,14 +45,14 @@ That's it. Thats the whole thing. But I have grand plans for where it goes from 
 
 ## The ask
 
-I'd love teams to try this out. It won't be free, but will be very affordable so long as you give me good feedback and really give ooda a go. (I'll show you what I'm thinking on an initial call)
+I'd love teams to try this out. It won't be free, but will be affordable so long as you give me good feedback and really give ooda a go. (I'll show you what I'm thinking on an initial call)
 
 **The perfect teams for me would be:**
-- 5-100 designers and/or product people collaborating today
+- 5-100 designers, researchers, writers, PMs etc.
 - Already building small web things* and sharing them with each other
 - Keen to keep moving their craft forwards with brand new tools, not just sticking to the existing ones
 
-Even better, I'd love to run a 1 hour lunchtime workshop for free as part of our partnership - just the basics of getting your agent familiar with ooda and building your first sites together.
+Even better, I'd love to run a 1 hour lunchtime workshop for free as part of our partnership. Just the basics of getting familiar with ooda and hosting your first things* together.
 
 ## Sign up below
 
@@ -94,6 +86,19 @@ I can't wait to hear from you
 
 <br />
 
-P.s. this site is hosted on ooda! You can check out the code [here](https://github.com/toy-studio/ooda-design-partners.git).
+<small class="opacity-75">P.s. this site is hosted on ooda. You can check out the code [here](https://github.com/toy-studio/ooda-design-partners.git). You can read about ooda's security stance and terms on the [main website](https://ooda.run).</small>
 
-_(*I'm kinda struggling with what they should be called. Sites feels too big and permanent. Ideas welcome!)_
+<small class="opacity-75">*Things currently means anything built as a website on a link. Could be websites, or tools, prototypes, documents, games, anything really! Struggling for a better collective noun - please let me know if you have an idea.</small>
+
+
+<!--<div
+    class="relative mb-8 aspect-video overflow-hidden rounded-xl border border-border bg-ink"
+>
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ"
+        title="ooda — Design partners"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        class="absolute inset-0 h-full w-full border-0"></iframe>
+</div>-->

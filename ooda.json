@@ -7,5 +7,14 @@
     "pre-launch",
     "landing"
   ],
-  "slug": "design-partners"
+  "slug": "design-partners",
+  "secrets": [
+    {
+      "key": "PLUNK_PUBLIC_KEY",
+      "kind": "env",
+      "scope": "site",
+      "description": "Plunk publishable key (pk_*) for client-side waitlist/design-partner signups",
+      "example": "pk_..."
+    }
+  ]
 }

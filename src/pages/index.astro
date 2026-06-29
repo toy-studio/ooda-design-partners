@@ -91,21 +91,22 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
             </div>
 
             <footer
-                class="mt-16 flex flex-wrap justify-between gap-4 border-t border-border pt-8 text-sm text-ink-faint"
+                class="mt-16 flex flex-wrap justify-between gap-4 pt-8 text-sm opacity-50"
             >
                 <span>&copy; {year} toy.studio</span>
                 <a
                     href="https://ooda.run"
-                    class="text-ink-faint transition-colors hover:text-ink"
-                    >ooda.run</a
+                    class="transition-colors hover-underline">ooda.run</a
                 >
             </footer>
         </main>
 
         <script>
-            // Publishable Plunk key (client-side, same project as ooda.run).
-            const PLUNK_PUBLIC_KEY =
-                "pk_REDACTED";
+            // Publishable Plunk key (pk_*, safe client-side). Injected by ooda
+            // as window.__OODA_ENV__.PLUNK_PUBLIC_KEY — set via:
+            //   ooda secrets set PLUNK_PUBLIC_KEY=pk_... --env --site design-partners
+            const PLUNK_PUBLIC_KEY = (window as any).__OODA_ENV__
+                ?.PLUNK_PUBLIC_KEY as string | undefined;
 
             document.querySelectorAll("[data-signup-form]").forEach((form) => {
                 form.addEventListener("submit", async (e) => {
@@ -117,6 +118,14 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
                     const btn = formEl.querySelector("button")!;
                     const placement =
                         formEl.dataset.placement ?? "design-partners";
+
+                    if (!PLUNK_PUBLIC_KEY) {
+                        console.warn(
+                            "PLUNK_PUBLIC_KEY missing — set it as an ooda env var (only available on the published site, not local dev).",
+                        );
+                        return;
+                    }
+
                     btn.setAttribute("disabled", "");
 
                     try {

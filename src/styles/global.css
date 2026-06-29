@@ -33,19 +33,19 @@
     @apply font-semibold text-ink;
 }
 .letter a {
-    @apply text-ink underline underline-offset-2 hover:text-ink-muted;
+    @apply text-ink border-b-2 border-y-surface-dark hover:text-ink-muted;
 }
 .letter h1 {
-    @apply mb-8 text-[clamp(2.25rem,6vw,3.25rem)] leading-[1.05] font-semibold tracking-[-0.02em] text-ink;
+    @apply mt-8 mb-4 text-[clamp(2.25rem,6vw,3.25rem)] leading-[1.05] font-semibold tracking-[-0.02em] text-ink;
 }
 .letter h2 {
-    @apply mt-12 mb-3 text-[clamp(1.6rem,4vw,2rem)] leading-tight font-semibold tracking-[-0.015em] text-ink;
+    @apply mt-8 mb-4 text-[clamp(1.6rem,4vw,2rem)] leading-tight font-semibold tracking-[-0.015em] text-ink;
 }
 .letter h3 {
-    @apply mt-10 mb-2 text-2xl font-semibold text-ink;
+    @apply mt-6 mb-4 text-2xl font-semibold text-ink;
 }
 .letter h4 {
-    @apply mt-8 mb-2 text-xl font-semibold text-ink;
+    @apply mt-4 mb-4 text-xl font-semibold text-ink;
 }
 .letter ul {
     @apply mb-4 list-disc pl-5;
@@ -54,11 +54,14 @@
     @apply mb-4 list-decimal pl-5;
 }
 .letter li {
-    @apply mb-1 text-lg text-ink-muted;
+    @apply mb-2 text-lg text-ink-muted;
 }
 .letter blockquote {
     @apply my-4 border-l-2 border-border pl-4 text-ink-muted italic;
 }
 .letter img {
     @apply h-16 w-16 rounded-full object-cover;
+}
+.letter code {
+    @apply text-gray-500 px-1.5 py-0.5 rounded bg-gray-100 text-base;
 }
