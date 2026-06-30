@@ -3,6 +3,22 @@
 
 <br />
 
+<div
+    class="relative aspect-[16/10] overflow-hidden rounded-xl border border-border bg-ink"
+>
+    <iframe
+        src="https://www.youtube.com/embed/PYCwNHnlaFA?theme=light&autoplay=1&keyboard=1&autohide=2&cc_load_policy=1&modestbranding=1&fs=0&showinfo=0&rel=0&iv_load_policy=3&mute=0&loop=0"
+        title="ooda — Design partners"
+        loading="lazy"
+        sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation"
+        allowfullscreen
+        class="absolute inset-0 h-full w-full border-0"></iframe>
+</div>
+<small class="h-16 opacity-75 pb-8">A quick demo of how ooda works</small>
+<br />
+<br />
+
+
 ### I'm thrilled to be launching ooda, the simplest way to host, manage and share unlimited internal web things as a team.
 
 You're reading this because I'm looking for design partners - teams who'd like to try Ooda in its earliest stages.
@@ -25,7 +41,7 @@ Building with AI is dreamy. But putting what you've built online is full of bad 
 
 Zip files! in 2026!
 
-Bad for one lump of code, a distaster when you're publishing dozens or even hundreds of tiny 'websites' day to day. 
+Bad for one lump of code, a disaster when you're publishing dozens or even hundreds of tiny 'websites' day to day. 
 
 I believe this explosion of creativity and risk needs a new solution. More secure, more discoverable, less friction.
 
@@ -87,16 +103,3 @@ I can't wait to hear from you
 <br />
 
 <p class="opacity-75" id="this-site">P.s. this site is hosted on ooda. You can check out the code <a href="https://github.com/toy-studio/ooda-design-partners">here</a> and previous versions <a href="https://design-partners.ooda.run/?v=1">here (v1)</a> and <a href="https://design-partners.ooda.run/?v=3">here (v3)</a> (yes, versioning for free). You can read about ooda's security stance and terms on the <a href="https://ooda.run">main website</a>.</p>
-
-
-<!--<div
-    class="relative mb-8 aspect-video overflow-hidden rounded-xl border border-border bg-ink"
->
-    <iframe
-        src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ"
-        title="ooda — Design partners"
-        loading="lazy"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-        class="absolute inset-0 h-full w-full border-0"></iframe>
-</div>-->
